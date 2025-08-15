@@ -12,8 +12,10 @@ export const useFormBuilderStore = create<FormBuilderSchema>()(
         apply: "Apply",
       },
       fields: null,
+      raw: null,
       setMeta: (meta) => set({ ...meta }),
       setFields: (fields) => set({ fields }),
+      setRaw: (raw) => set({ raw }),
     }),
     {
       name: "form-builder",
@@ -21,6 +23,7 @@ export const useFormBuilderStore = create<FormBuilderSchema>()(
         title: state.title,
         labels: state.labels,
         fields: state.fields,
+        raw: state.raw,
       }),
     }
   )

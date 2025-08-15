@@ -39,7 +39,6 @@ export type Field = {
   type: FieldType;
   label: string;
   required: boolean;
-  defaultValue?: string | number | boolean;
 } & (
   | ({ type: "numeric" } & NumericField)
   | ({ type: "string" } & StringField)

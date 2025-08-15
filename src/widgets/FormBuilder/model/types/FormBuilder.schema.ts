@@ -7,10 +7,12 @@ type FormBuilderState = {
     save?: string;
     apply?: string;
   };
+  raw: string | null;
   fields: Field[] | null;
 };
 
 type FormBuilderActions = {
+  setRaw: (raw: string) => void;
   setFields: (fields: Field[]) => void;
   setMeta: (meta: {
     title: FormBuilderState["title"];
