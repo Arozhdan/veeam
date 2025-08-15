@@ -12,8 +12,7 @@ export const useFormBuilderStore = create<FormBuilderSchema>()(
         apply: "Apply",
       },
       fields: null,
-      setTitle: (title) => set({ title }),
-      setLabels: (labels) => set({ labels }),
+      setMeta: (meta) => set({ ...meta }),
       setFields: (fields) => set({ fields }),
     }),
     {

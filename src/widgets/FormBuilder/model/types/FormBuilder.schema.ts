@@ -11,9 +11,11 @@ type FormBuilderState = {
 };
 
 type FormBuilderActions = {
-  setTitle: (title: string) => void;
-  setLabels: (labels: FormBuilderState["labels"]) => void;
   setFields: (fields: Field[]) => void;
+  setMeta: (meta: {
+    title: FormBuilderState["title"];
+    labels: FormBuilderState["labels"];
+  }) => void;
 };
 
 export type FormBuilderSchema = FormBuilderState & FormBuilderActions;

@@ -1,3 +1,3 @@
-export const FormBuilder = () => {
-  return <div>FormBuilder</div>;
+export const FormBuilderDisplay = () => {
+  return <div>FormBuilderDisplay</div>;
 };
